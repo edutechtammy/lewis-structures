@@ -1,0 +1,600 @@
+/* Basic styles for Lewis Structures HTML */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #212529;
+    /* Dark text by default for ADA compliance */
+}
+
+header {
+    background-color: #2c5530;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    color: white;
+    /* Explicit white for headers on dark background */
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #212529;
+    /* Ensure all headers are dark enough for ADA compliance */
+}
+
+h2 {
+    color: #2c5530;
+    border-bottom: 2px solid #28a745;
+    /* Updated to match ADA-compliant green */
+    padding-bottom: 10px;
+}
+
+ol,
+ul {
+    padding-left: 30px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+p,
+li,
+span,
+div {
+    color: inherit;
+    /* Inherit dark colors from parent elements */
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+
+/* Project Description Styling - ADA Compliant Colors */
+.project-description {
+    background-color: #f8f9fa;
+    /* Light gray background for better contrast */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    border-left: 4px solid #28a745;
+    /* Darker green for better contrast */
+    color: #212529;
+    /* Dark text for excellent contrast ratio */
+}
+
+.project-description h2 {
+    color: #155724;
+    /* Dark green for excellent contrast on light background */
+    margin-top: 0;
+}
+
+.project-description p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    color: #212529;
+    /* Ensure dark text throughout */
+}
+
+/* Stakeholder Benefits Grid - ADA Compliant */
+.stakeholder-benefits {
+    margin-top: 20px;
+}
+
+.stakeholder-benefits h3 {
+    color: #212529;
+    /* Dark text for readability */
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.benefit-item {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-item h4 {
+    margin-top: 0;
+    color: #0056b3;
+    /* Darker blue for better contrast (7.0:1 ratio) */
+    font-size: 1.1em;
+}
+
+.benefit-item ul {
+    margin: 10px 0;
+    padding-left: 20px;
+    color: #212529;
+    /* Dark text for list items */
+}
+
+.benefit-item li {
+    margin: 5px 0;
+    color: #495057;
+    /* Dark gray for good contrast */
+}
+
+/* Problem vs Solution Comparison - ADA Compliant */
+.problem-solution {
+    background: #f8f9fa;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    color: #212529;
+    /* Dark text for readability */
+}
+
+.problem-solution h2 {
+    color: #212529;
+    /* Ensure header is dark */
+}
+
+.comparison-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.current-state,
+.proposed-solution {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.current-state {
+    background: #f8d7da;
+    /* Lighter red background */
+    border-left: 4px solid #dc3545;
+    /* Strong red border */
+    color: #721c24;
+    /* Dark red text for excellent contrast */
+}
+
+.proposed-solution {
+    background: #d1e7dd;
+    /* Lighter green background */
+    border-left: 4px solid #198754;
+    /* Strong green border */
+    color: #0f5132;
+    /* Dark green text for excellent contrast */
+}
+
+.current-state h3,
+.proposed-solution h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    /* Colors inherited from parent for consistency */
+}
+
+/* Technical Demo Section - ADA Compliant */
+.technical-demo {
+    background: #fff3cd;
+    /* Lighter orange background */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    border-left: 4px solid #fd7e14;
+    /* Strong orange border */
+    color: #664d03;
+    /* Dark orange text for excellent contrast */
+}
+
+.technical-demo h2 {
+    color: #664d03;
+    /* Dark orange for headers */
+}
+
+/* Demo Examples Grid - ADA Compliant */
+.demo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 25px;
+    margin: 25px 0;
+}
+
+.demo-example {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dee2e6;
+}
+
+.demo-example h3 {
+    margin-top: 0;
+    color: #0056b3;
+    /* Darker blue for better contrast */
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #cce7ff;
+    /* Lighter blue border */
+}
+
+.demo-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.demo-container canvas {
+    border: 2px solid #6c757d;
+    /* Darker border for better visibility */
+    border-radius: 6px;
+    background: #ffffff;
+    flex-shrink: 0;
+}
+
+.demo-explanation {
+    flex-grow: 1;
+}
+
+.demo-explanation h4 {
+    margin-top: 0;
+    color: #495057;
+    /* Dark gray for good contrast */
+    font-size: 1em;
+}
+
+.demo-explanation ul {
+    margin: 10px 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.demo-explanation li {
+    margin: 8px 0;
+    padding: 5px 0;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 0.9em;
+    color: #495057;
+    /* Dark gray text */
+}
+
+.demo-explanation li:last-child {
+    border-bottom: none;
+}
+
+.demo-explanation strong {
+    color: #0056b3;
+    /* Darker blue for emphasis */
+}
+
+/* Comparison Highlight Section - ADA Compliant */
+.comparison-highlight {
+    background: #f8f9fa;
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 8px;
+    border: 2px solid #0d6efd;
+    /* Strong blue border */
+}
+
+.comparison-highlight h3 {
+    text-align: center;
+    color: #0a58ca;
+    /* Darker blue for excellent contrast */
+    margin-top: 0;
+    font-size: 1.3em;
+}
+
+.before-after {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.before,
+.after {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.before {
+    background: #f8d7da;
+    /* Lighter red background */
+    border-left: 4px solid #dc3545;
+    color: #721c24;
+    /* Dark red text */
+}
+
+.after {
+    background: #d1e7dd;
+    /* Lighter green background */
+    border-left: 4px solid #198754;
+    color: #0f5132;
+    /* Dark green text */
+}
+
+.before h4,
+.after h4 {
+    margin-top: 0;
+    font-size: 1.1em;
+    /* Colors inherited from parent containers */
+}
+
+.example-problems,
+.example-benefits {
+    margin-top: 15px;
+}
+
+.example-problems p,
+.example-benefits p {
+    margin: 8px 0;
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+.example-problems p {
+    color: #721c24;
+    /* Dark red for good contrast */
+}
+
+.example-benefits p {
+    color: #0f5132;
+    /* Dark green for good contrast */
+}
+
+/* Implementation Timeline - ADA Compliant */
+.implementation-plan {
+    background: #f3e5f5;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    color: #432874;
+    /* Dark purple text for excellent contrast */
+}
+
+.implementation-plan h2 {
+    color: #432874;
+    /* Dark purple for headers */
+}
+
+.timeline {
+    margin-top: 20px;
+}
+
+.phase {
+    background: white;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #6f42c1;
+    /* Strong purple border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #212529;
+    /* Dark text for readability */
+}
+
+.phase h3 {
+    margin-top: 0;
+    color: #432874;
+    /* Dark purple for phase headers */
+}
+
+/* Cost-Benefit Analysis - ADA Compliant */
+.cost-benefit {
+    background: #cff4fc;
+    /* Lighter blue background */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    color: #055160;
+    /* Dark teal for excellent contrast */
+}
+
+.cost-benefit h2 {
+    color: #055160;
+    /* Dark teal for headers */
+}
+
+.analysis-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.costs,
+.benefits {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.costs {
+    border-left: 4px solid #dc3545;
+    /* Strong red */
+    color: #721c24;
+    /* Dark red text */
+}
+
+.costs h3 {
+    color: #721c24;
+    /* Dark red for cost headers */
+}
+
+.benefits {
+    border-left: 4px solid #198754;
+    /* Strong green */
+    color: #0f5132;
+    /* Dark green text */
+}
+
+.benefits h3 {
+    color: #0f5132;
+    /* Dark green for benefit headers */
+}
+
+/* Risk Assessment - ADA Compliant */
+.risk-mitigation {
+    background: #fff3cd;
+    /* Light yellow background */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    color: #664d03;
+    /* Dark yellow/brown for excellent contrast */
+}
+
+.risk-mitigation h2 {
+    color: #664d03;
+    /* Dark yellow/brown for headers */
+}
+
+.risk-item {
+    background: white;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 6px;
+    border-left: 4px solid #fd7e14;
+    /* Strong orange border */
+    color: #212529;
+    /* Dark text for readability */
+}
+
+.risk-item h3 {
+    margin-top: 0;
+    color: #664d03;
+    /* Dark orange for risk headers */
+}
+
+/* Decision Support Footer - ADA Compliant */
+.decision-support {
+    background: #e2e3f1;
+    /* Lighter purple background */
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 8px;
+    border: 2px solid #6f42c1;
+    /* Strong purple border */
+    color: #3d2a5a;
+    /* Dark purple text for excellent contrast */
+}
+
+.decision-support h2 {
+    color: #3d2a5a;
+    /* Dark purple for headers */
+}
+
+.action-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.action-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.action-item h3 {
+    margin-top: 0;
+    color: #495057;
+    /* Dark gray for readability */
+}
+
+.action-item p,
+.action-item ul,
+.action-item li {
+    color: #212529;
+    /* Dark text throughout */
+}
+
+.approval-request {
+    background: #198754;
+    /* Strong green background */
+    color: white;
+    /* White text on dark green has excellent contrast */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.approval-request h3 {
+    margin-top: 0;
+    font-size: 1.3em;
+    color: white;
+    /* Explicit white for headers */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .benefits-grid,
+    .comparison-container,
+    .analysis-grid,
+    .action-items,
+    .demo-grid,
+    .before-after {
+        grid-template-columns: 1fr;
+    }
+
+    .demo-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .demo-container canvas {
+        margin-bottom: 15px;
+    }
+
+    .project-description,
+    .problem-solution,
+    .technical-demo,
+    .implementation-plan,
+    .cost-benefit,
+    .risk-mitigation,
+    .decision-support {
+        margin: 15px 0;
+        padding: 15px;
+    }
+
+    .demo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .demo-example {
+        padding: 15px;
+    }
+}

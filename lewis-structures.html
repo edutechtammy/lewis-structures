@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lewis Structures</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="ChemDoodleWeb.css">
+</head>
+<body>
+    <header>
+        <h1>Lewis Structures - Accessibility Enhancement Project</h1>
+        <div class="project-description">
+            <h2>Project Proposal: Converting Hand-Drawn Chemistry Content to Accessible Digital Format</h2>
+            <p><strong>Objective:</strong> This project explores how to convert hand-drawn scanned PDF content from the chemistry department and make it accessible via the ChemDoodle library, ensuring compliance with accessibility standards while maintaining educational effectiveness.</p>
+            
+            <div class="stakeholder-benefits">
+                <h3>Key Benefits for Stakeholders</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <h4>🏛️ Institution</h4>
+                        <ul>
+                            <li>ADA compliance assurance</li>
+                            <li>Reduced legal risk</li>
+                            <li>Enhanced reputation for inclusivity</li>
+                        </ul>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>🧪 Chemistry Department</h4>
+                        <ul>
+                            <li>Professional, interactive content</li>
+                            <li>Improved student engagement</li>
+                            <li>Modern teaching tools</li>
+                        </ul>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>👥 Students</h4>
+                        <ul>
+                            <li>Universal access to content</li>
+                            <li>Interactive learning experience</li>
+                            <li>Better comprehension tools</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="problem-solution">
+            <h2>Current Challenge & Proposed Solution</h2>
+            
+            <div class="comparison-container">
+                <div class="current-state">
+                    <h3>❌ Current State: Inaccessible Scanned PDFs</h3>
+                    <ul>
+                        <li>Hand-drawn Lewis structures in scanned documents</li>
+                        <li>Inaccessible to screen readers</li>
+                        <li>Poor image quality when zoomed</li>
+                        <li>Static, non-interactive content</li>
+                        <li>ADA compliance issues</li>
+                        <li>Limited learning engagement</li>
+                    </ul>
+                </div>
+                
+                <div class="proposed-solution">
+                    <h3>✅ Proposed Solution: ChemDoodle Web Components</h3>
+                    <ul>
+                        <li>Interactive molecular structure builder</li>
+                        <li>Full screen reader compatibility</li>
+                        <li>Scalable, high-quality graphics</li>
+                        <li>Keyboard navigation support</li>
+                        <li>WCAG 2.1 AA compliant</li>
+                        <li>Enhanced student engagement</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="technical-demo">
+            <h2>Technology Demonstration</h2>
+            <p>The following examples show how ChemDoodle can replace traditional hand-drawn content with accessible, interactive alternatives:</p>
+            
+            <div class="demo-grid">
+                <div class="demo-example">
+                    <h3>Example 1: Water (H₂O)</h3>
+                    <div class="demo-container">
+                        <canvas id="demo-water" width="320" height="240"></canvas>
+                        <div class="demo-explanation">
+                            <h4>What you're seeing:</h4>
+                            <ul>
+                                <li><strong>Interactive Structure:</strong> Students can zoom and examine details</li>
+                                <li><strong>Screen Reader Compatible:</strong> "Oxygen atom bonded to two hydrogen atoms with two lone pairs"</li>
+                                <li><strong>Professional Quality:</strong> Clean, publication-ready graphics</li>
+                                <li><strong>Educational Value:</strong> Clear visualization of molecular geometry</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-example">
+                    <h3>Example 2: Methane (CH₄)</h3>
+                    <div class="demo-container">
+                        <canvas id="demo-methane" width="320" height="240"></canvas>
+                        <div class="demo-explanation">
+                            <h4>Enhanced Features:</h4>
+                            <ul>
+                                <li><strong>Tetrahedral Geometry:</strong> 3D-like representation in 2D</li>
+                                <li><strong>Bond Clarity:</strong> Clear single bond indicators</li>
+                                <li><strong>Atom Labels:</strong> Element symbols clearly displayed</li>
+                                <li><strong>Accessibility:</strong> Full keyboard navigation support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-example">
+                    <h3>Example 3: Carbon Dioxide (CO₂)</h3>
+                    <div class="demo-container">
+                        <canvas id="demo-co2" width="320" height="240"></canvas>
+                        <div class="demo-explanation">
+                            <h4>Advanced Capabilities:</h4>
+                            <ul>
+                                <li><strong>Double Bonds:</strong> Clearly represented with parallel lines</li>
+                                <li><strong>Linear Geometry:</strong> Accurate molecular shape</li>
+                                <li><strong>Formal Charges:</strong> Can display when needed</li>
+                                <li><strong>Scalable:</strong> Maintains quality at any size</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-example">
+                    <h3>Example 4: Ammonia (NH₃)</h3>
+                    <div class="demo-container">
+                        <canvas id="demo-ammonia" width="320" height="240"></canvas>
+                        <div class="demo-explanation">
+                            <h4>Lone Pair Visualization:</h4>
+                            <ul>
+                                <li><strong>Lone Pairs:</strong> Clearly shown as electron dots</li>
+                                <li><strong>Pyramidal Shape:</strong> 3D geometry representation</li>
+                                <li><strong>Interactive Learning:</strong> Students can explore structure</li>
+                                <li><strong>Consistent Style:</strong> Uniform appearance across all molecules</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comparison-highlight">
+                <h3>🔍 Compare: Traditional vs. ChemDoodle</h3>
+                <div class="before-after">
+                    <div class="before">
+                        <h4>❌ Current Hand-Drawn PDFs:</h4>
+                        <div class="example-problems">
+                            <p>• Blurry when zoomed</p>
+                            <p>• Not accessible to screen readers</p>
+                            <p>• Static, non-interactive</p>
+                            <p>• Inconsistent quality</p>
+                            <p>• Cannot be modified or updated</p>
+                        </div>
+                    </div>
+                    <div class="after">
+                        <h4>✅ ChemDoodle Interactive Structures:</h4>
+                        <div class="example-benefits">
+                            <p>• Crisp at any zoom level</p>
+                            <p>• Full screen reader descriptions</p>
+                            <p>• Interactive and engaging</p>
+                            <p>• Professional, consistent appearance</p>
+                            <p>• Easily updated and modified</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>What are Lewis Structures?</h2>
+            <p>Lewis structures are diagrams that represent the bonding between atoms in a molecule and the lone pairs of electrons that may exist.</p>
+        </section>
+        <section>
+            <h2>How to Draw Lewis Structures</h2>
+            <ol>
+                <li>Determine the total number of valence electrons in the molecule.</li>
+                <li>Identify the central atom (usually the least electronegative).</li>
+                <li>Draw single bonds between the central atom and surrounding atoms.</li>
+                <li>Distribute remaining electrons to satisfy the octet rule.</li>
+            </ol>
+        </section>
+        
+        <section class="implementation-plan">
+            <h2>Implementation Roadmap</h2>
+            
+            <div class="timeline">
+                <div class="phase">
+                    <h3>Phase 1: Pilot Project (2-3 weeks)</h3>
+                    <ul>
+                        <li>Convert 5-10 existing Lewis structure PDFs</li>
+                        <li>Create accessible ChemDoodle versions</li>
+                        <li>Conduct usability testing with students</li>
+                        <li>Gather faculty feedback</li>
+                    </ul>
+                </div>
+                
+                <div class="phase">
+                    <h3>Phase 2: Department Integration (4-6 weeks)</h3>
+                    <ul>
+                        <li>Train chemistry faculty on new tools</li>
+                        <li>Develop content creation templates</li>
+                        <li>Integrate with existing LMS</li>
+                        <li>Create student orientation materials</li>
+                    </ul>
+                </div>
+                
+                <div class="phase">
+                    <h3>Phase 3: Full Deployment (Ongoing)</h3>
+                    <ul>
+                        <li>Convert remaining chemistry content</li>
+                        <li>Expand to other chemistry topics</li>
+                        <li>Monitor accessibility compliance</li>
+                        <li>Continuous improvement based on feedback</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cost-benefit">
+            <h2>Cost-Benefit Analysis</h2>
+            
+            <div class="analysis-grid">
+                <div class="costs">
+                    <h3>💰 Investment Required</h3>
+                    <ul>
+                        <li><strong>Library License:</strong> Free (Open Source GPL)</li>
+                        <li><strong>Development Time:</strong> 40-60 hours initial setup</li>
+                        <li><strong>Content Conversion:</strong> 2-3 hours per PDF</li>
+                        <li><strong>Training:</strong> 8-10 hours for faculty</li>
+                        <li><strong>Ongoing Maintenance:</strong> Minimal</li>
+                    </ul>
+                </div>
+                
+                <div class="benefits">
+                    <h3>📈 Return on Investment</h3>
+                    <ul>
+                        <li><strong>Legal Compliance:</strong> Eliminates ADA violation risk</li>
+                        <li><strong>Student Success:</strong> Improved learning outcomes</li>
+                        <li><strong>Efficiency:</strong> Reusable content templates</li>
+                        <li><strong>Innovation:</strong> Enhanced institutional reputation</li>
+                        <li><strong>Scalability:</strong> Template applies to all chemistry courses</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="risk-mitigation">
+            <h2>Risk Assessment & Mitigation</h2>
+            
+            <div class="risk-item">
+                <h3>Risk: Faculty Resistance to Change</h3>
+                <p><strong>Mitigation:</strong> Provide comprehensive training, demonstrate clear benefits, phase implementation gradually</p>
+            </div>
+            
+            <div class="risk-item">
+                <h3>Risk: Technical Learning Curve</h3>
+                <p><strong>Mitigation:</strong> Create template-based workflow, provide ongoing technical support, develop documentation</p>
+            </div>
+            
+            <div class="risk-item">
+                <h3>Risk: Student Adaptation</h3>
+                <p><strong>Mitigation:</strong> Provide tutorial materials, maintain parallel formats initially, gather student feedback</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="decision-support">
+            <h2>Next Steps for Decision Makers</h2>
+            <div class="action-items">
+                <div class="action-item">
+                    <h3>For Chemistry Department</h3>
+                    <ul>
+                        <li>Review sample accessible content</li>
+                        <li>Identify priority courses for conversion</li>
+                        <li>Designate faculty champions</li>
+                        <li>Provide content for pilot testing</li>
+                    </ul>
+                </div>
+                
+                <div class="action-item">
+                    <h3>For Instructional Design Team</h3>
+                    <ul>
+                        <li>Approve pilot project timeline</li>
+                        <li>Allocate development resources</li>
+                        <li>Coordinate with accessibility office</li>
+                        <li>Plan faculty training sessions</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="approval-request">
+                <h3>🎯 Recommendation</h3>
+                <p>We recommend proceeding with a small-scale pilot project to demonstrate the effectiveness of ChemDoodle for accessibility compliance and enhanced learning outcomes. This low-risk, high-reward approach will provide concrete data for informed decision-making.</p>
+            </div>
+        </div>
+        
+        <p>&copy; 2025 Lewis Structures Accessibility Project | Instructional Design Team</p>
+    </footer>
+    
+    <!-- ChemDoodle Library Files -->
+    <script src="ChemDoodleWeb.js"></script>
+    <script src="ChemDoodleWeb-uis.js"></script>
+    
+    <script>
+        // Initialize ChemDoodle examples for stakeholder demonstration
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('ChemDoodle version:', ChemDoodle.getVersion());
+            
+            // Demo 1: Water (H2O)
+            try {
+                console.log('Creating water molecule...');
+                let waterCanvas = new ChemDoodle.ViewerCanvas('demo-water', 320, 240);
+                
+                // Create the molecule first
+                let waterMolecule = new ChemDoodle.structures.Molecule();
+                
+                // Create atoms for water (centered and scaled up)
+                let oAtom = new ChemDoodle.structures.Atom('O', 160, 120);
+                oAtom.numLonePair = 2; // Two lone pairs on oxygen
+                let h1Atom = new ChemDoodle.structures.Atom('H', 110, 170);
+                let h2Atom = new ChemDoodle.structures.Atom('H', 210, 170);
+                
+                // Create bonds
+                let bond1 = new ChemDoodle.structures.Bond(oAtom, h1Atom, 1);
+                let bond2 = new ChemDoodle.structures.Bond(oAtom, h2Atom, 1);
+                
+                waterMolecule.atoms = [oAtom, h1Atom, h2Atom];
+                waterMolecule.bonds = [bond1, bond2];
+                
+                // Load molecule and configure specs after
+                waterCanvas.loadMolecule(waterMolecule);
+                waterCanvas.specs.atoms_font_size_2D = 16;
+                waterCanvas.specs.bonds_width_2D = 2.5;
+                waterCanvas.specs.atoms_useJMOLColors = true;
+                waterCanvas.repaint();
+                console.log('Water molecule loaded successfully');
+            } catch (error) {
+                console.error('Error loading water molecule:', error);
+            }
+                
+            // Demo 2: Methane (CH4)
+            try {
+                console.log('Creating methane molecule...');
+                let methaneCanvas = new ChemDoodle.ViewerCanvas('demo-methane', 320, 240);
+                
+                // Create the molecule first
+                let methaneMolecule = new ChemDoodle.structures.Molecule();
+                
+                // Create carbon at center and four hydrogens (centered and scaled up)
+                let cAtomMethane = new ChemDoodle.structures.Atom('C', 160, 120);
+                let h1Methane = new ChemDoodle.structures.Atom('H', 160, 70);
+                let h2Methane = new ChemDoodle.structures.Atom('H', 210, 120);
+                let h3Methane = new ChemDoodle.structures.Atom('H', 160, 170);
+                let h4Methane = new ChemDoodle.structures.Atom('H', 110, 120);
+                
+                // Create bonds
+                let c_h1Methane = new ChemDoodle.structures.Bond(cAtomMethane, h1Methane, 1);
+                let c_h2Methane = new ChemDoodle.structures.Bond(cAtomMethane, h2Methane, 1);
+                let c_h3Methane = new ChemDoodle.structures.Bond(cAtomMethane, h3Methane, 1);
+                let c_h4Methane = new ChemDoodle.structures.Bond(cAtomMethane, h4Methane, 1);
+                
+                methaneMolecule.atoms = [cAtomMethane, h1Methane, h2Methane, h3Methane, h4Methane];
+                methaneMolecule.bonds = [c_h1Methane, c_h2Methane, c_h3Methane, c_h4Methane];
+                
+                // Load molecule and configure specs after
+                methaneCanvas.loadMolecule(methaneMolecule);
+                methaneCanvas.specs.atoms_font_size_2D = 16;
+                methaneCanvas.specs.bonds_width_2D = 2.5;
+                methaneCanvas.specs.atoms_useJMOLColors = true;
+                methaneCanvas.specs.atoms_displayTerminalCarbonLabels_2D = true;
+                methaneCanvas.repaint();
+                console.log('Methane molecule loaded successfully');
+            } catch (error) {
+                console.error('Error loading methane molecule:', error);
+            }
+
+            // Demo 3: Carbon Dioxide (CO2)
+            try {
+                console.log('Creating CO2 molecule...');
+                let co2Canvas = new ChemDoodle.ViewerCanvas('demo-co2', 320, 240);
+                
+                // Create the molecule first
+                let co2Molecule = new ChemDoodle.structures.Molecule();
+                
+                // Create atoms for CO2 (centered and scaled up)
+                let cAtomCO2 = new ChemDoodle.structures.Atom('C', 160, 120);
+                let o1AtomCO2 = new ChemDoodle.structures.Atom('O', 100, 120);
+                let o2AtomCO2 = new ChemDoodle.structures.Atom('O', 220, 120);
+                
+                // Create double bonds
+                let c_o1CO2 = new ChemDoodle.structures.Bond(cAtomCO2, o1AtomCO2, 2);
+                let c_o2CO2 = new ChemDoodle.structures.Bond(cAtomCO2, o2AtomCO2, 2);
+                
+                co2Molecule.atoms = [cAtomCO2, o1AtomCO2, o2AtomCO2];
+                co2Molecule.bonds = [c_o1CO2, c_o2CO2];
+                
+                // Load molecule and configure specs after
+                co2Canvas.loadMolecule(co2Molecule);
+                co2Canvas.specs.atoms_font_size_2D = 16;
+                co2Canvas.specs.bonds_width_2D = 2.5;
+                co2Canvas.specs.atoms_useJMOLColors = true;
+                co2Canvas.repaint();
+                console.log('CO2 molecule loaded successfully');
+            } catch (error) {
+                console.error('Error loading CO2 molecule:', error);
+            }
+
+            // Demo 4: Ammonia (NH3)
+            try {
+                console.log('Creating ammonia molecule...');
+                let ammoniaCanvas = new ChemDoodle.ViewerCanvas('demo-ammonia', 320, 240);
+                
+                // Create the molecule first
+                let ammoniaMolecule = new ChemDoodle.structures.Molecule();
+                
+                // Create nitrogen and three hydrogens (centered and scaled up)
+                let nAtomAmmonia = new ChemDoodle.structures.Atom('N', 160, 120);
+                nAtomAmmonia.numLonePair = 1; // One lone pair on nitrogen
+                let nh1Ammonia = new ChemDoodle.structures.Atom('H', 120, 170);
+                let nh2Ammonia = new ChemDoodle.structures.Atom('H', 160, 70);
+                let nh3Ammonia = new ChemDoodle.structures.Atom('H', 200, 170);
+                
+                // Create bonds
+                let n_h1Ammonia = new ChemDoodle.structures.Bond(nAtomAmmonia, nh1Ammonia, 1);
+                let n_h2Ammonia = new ChemDoodle.structures.Bond(nAtomAmmonia, nh2Ammonia, 1);
+                let n_h3Ammonia = new ChemDoodle.structures.Bond(nAtomAmmonia, nh3Ammonia, 1);
+                
+                ammoniaMolecule.atoms = [nAtomAmmonia, nh1Ammonia, nh2Ammonia, nh3Ammonia];
+                ammoniaMolecule.bonds = [n_h1Ammonia, n_h2Ammonia, n_h3Ammonia];
+                
+                // Load molecule and configure specs after
+                ammoniaCanvas.loadMolecule(ammoniaMolecule);
+                ammoniaCanvas.specs.atoms_font_size_2D = 16;
+                ammoniaCanvas.specs.bonds_width_2D = 2.5;
+                ammoniaCanvas.specs.atoms_useJMOLColors = true;
+                ammoniaCanvas.repaint();
+                console.log('Ammonia molecule loaded successfully');
+            } catch (error) {
+                console.error('Error loading ammonia molecule:', error);
+            }
+
+            // Add accessibility descriptions
+            addAccessibilityDescriptions();
+            console.log('All molecules processing completed!');
+        });
+        
+        function addAccessibilityDescriptions() {
+            // Add ARIA labels to canvases for screen readers
+            document.getElementById('demo-water').setAttribute('aria-label', 
+                'Lewis structure of water: Oxygen atom with two lone pairs bonded to two hydrogen atoms in bent geometry');
+            
+            document.getElementById('demo-methane').setAttribute('aria-label', 
+                'Lewis structure of methane: Carbon atom bonded to four hydrogen atoms in tetrahedral geometry');
+            
+            document.getElementById('demo-co2').setAttribute('aria-label', 
+                'Lewis structure of carbon dioxide: Carbon atom double-bonded to two oxygen atoms in linear geometry');
+            
+            document.getElementById('demo-ammonia').setAttribute('aria-label', 
+                'Lewis structure of ammonia: Nitrogen atom with one lone pair bonded to three hydrogen atoms in pyramidal geometry');
+        }
+    </script>
+</body>
+</html>
